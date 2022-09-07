@@ -1,14 +1,12 @@
-name: Build and test of Java Project
- 
+YAML
+name: GitHub Actions Demo
 on: [push]
- 
 jobs:
- build:
-   runs-on: ubuntu-latest
- 
-   steps:
-     - uses: actions/checkout@v2
-     - uses: actions/setup-node@v3
-       with:
-        node-version: 16
-    - run: npm test
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm test
